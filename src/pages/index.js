@@ -1,8 +1,10 @@
 import React from "react"
+import Navbar from "../pages/components/Navbar"
 
 export default function Home() {
   return (
     <section>
+      <Navbar />
       <div>
         <h2>Design</h2>
         <h3>Ontwikkel & Deploy</h3>
