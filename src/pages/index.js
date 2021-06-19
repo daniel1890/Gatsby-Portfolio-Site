@@ -1,18 +1,20 @@
 import React from "react"
-import Navbar from "../pages/components/Navbar"
+import Layout from "../components/Layout"
+import { header } from "../styles/home.module.css"
 
 export default function Home() {
   return (
-    <section>
-      <Navbar />
-      <div>
-        <h2>Design</h2>
-        <h3>Ontwikkel & Deploy</h3>
-        <p>
-          Programmeer liefhebber geïnteresseerd in Web-Deb; front- & back-end.
-        </p>
-      </div>
-    </section>
+    <Layout>
+      <section className={header}>
+        <div>
+          <h2>Design</h2>
+          <h3>Ontwikkel & Deploy</h3>
+          <p>
+            Programmeer liefhebber geïnteresseerd in Web-Deb; front- & back-end.
+          </p>
+        </div>
+      </section>
+    </Layout>
   )
 }
 

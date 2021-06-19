@@ -6,9 +6,9 @@ export default function Navbar() {
     <nav>
       <h1>Daniël Roth</h1>
       <div className="links">
-        <Link to="../">Index</Link>
-        <Link to="../about">About Me</Link>
-        <Link to="../projects">Portfolio Projecten</Link>
+        <Link to="../">Index |</Link>
+        <Link to="../about"> About Me |</Link>
+        <Link to="../projects"> Portfolio Projecten</Link>
       </div>
     </nav>
   )
