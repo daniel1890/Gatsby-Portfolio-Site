@@ -1,0 +1,14 @@
+.header {
+  max-width: 50%;
+  margin: auto;
+  max-width: 85%;
+}
+
+.header h2 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.header li {
+  margin-left: 1em;
+}

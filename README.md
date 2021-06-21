@@ -18,6 +18,7 @@ Met behulp van Gatsby is het makkelijk om een statische website te bouwen die ee
 4. Creeër een Layout component, hierin verwerk je alle content die op elke pagina weergeven wordt en deze layout is makkelijk te gebruiken over alle pagina's, ook kan je met behulp van de props parameters kun je children aanroepen, dit zorgt ervoor dat alle onderliggende data van het element gebruikt kan worden, hiermee wordt de content makkelijk ingevuld in de markup.
 5. Creeër een css file in een nieuwe styles folder, deze css is makkelijk globaal toe te passen door de css file te importeren in de Layout component, doordat de |Layout component op elke pagina gebruikt wordt hoeft er maar 1 aanpassing gedaan te worden en de globaal verandert de styling.
 6. Creeër een module.css file, deze wordt gebruikt wanneer css op 1 pagina toegepast moet worden, door de componenten van de module 1 per 1 te importeren kunnen ze makkelijk gebruikt worden de klassenamen te gebruiken van de desbetreffende componenten op de pagina.
+7. Voeg een lokale StaticImage component toe, dit doe je door een image file toe te voegen aan de public folder, met gatsby-plugin-image en gatsby-plugin-sharp kan je een static image file toe voegen aan de markup, deze bestanden zijn bedoelt om zo snel mogelijk te renderen.
 
 ## Gebruikte Programmeertalen
 
@@ -25,3 +26,6 @@ Met behulp van Gatsby is het makkelijk om een statische website te bouwen die ee
 - Gatsby.JS / React
 
 ## Gatsby Plugins
+
+- Gatsby Plugin Image
+- Gatsby Plugin Sharp

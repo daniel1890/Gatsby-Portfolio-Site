@@ -57,7 +57,7 @@ nav a {
 nav a:hover {
   border-color: white;
 }
-footer p {
+footer .container {
   text-align: center;
   color: #bbb;
   margin: 40px auto;
