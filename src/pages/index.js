@@ -1,10 +1,28 @@
-import { Link } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
 import { header, btn } from "../styles/home.module.css"
 import { StaticImage } from "gatsby-plugin-image"
 
 export default function Home() {
+  const data = useStaticQuery(graphql`
+    query siteInfo {
+      site {
+        id
+        siteMetadata {
+          copyright
+          description
+          title
+        }
+      }
+    }
+  `)
+
+  console.log(data)
+  const { title, description } = data.site.siteMetadata
+  console.log(title)
+  console.log(description)
+
   return (
     <Layout>
       <section className={header}>
@@ -28,6 +46,4 @@ export default function Home() {
   )
 }
 
-// Functies kunnen op 2 manier geschreven worden, snel met: export default function FunctionName() { }
-// Of: Const Home = () => { }
-// export default Home;
+//export default Home

@@ -19,6 +19,7 @@ Met behulp van Gatsby is het makkelijk om een statische website te bouwen die ee
 5. Creeër een css file in een nieuwe styles folder, deze css is makkelijk globaal toe te passen door de css file te importeren in de Layout component, doordat de |Layout component op elke pagina gebruikt wordt hoeft er maar 1 aanpassing gedaan te worden en de globaal verandert de styling.
 6. Creeër een module.css file, deze wordt gebruikt wanneer css op 1 pagina toegepast moet worden, door de componenten van de module 1 per 1 te importeren kunnen ze makkelijk gebruikt worden de klassenamen te gebruiken van de desbetreffende componenten op de pagina.
 7. Voeg een lokale StaticImage component toe, dit doe je door een image file toe te voegen aan de public folder, met gatsby-plugin-image en gatsby-plugin-sharp kan je een static image file toe voegen aan de markup, deze bestanden zijn bedoelt om zo snel mogelijk te renderen.
+8. Creeër een graphql query, dit is nodig om externe data op te halen vanuit een externe endpoint, een graphql query returned altijd een JSON object. Door graphql te importeren met gatsby is de graphql library makkelijk te gebruiken.
 
 ## Gebruikte Programmeertalen
 

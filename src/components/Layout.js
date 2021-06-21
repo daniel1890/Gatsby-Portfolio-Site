@@ -2,7 +2,6 @@ import React from "react"
 import Navbar from "./Navbar"
 import "../styles/global.css"
 import { StaticImage } from "gatsby-plugin-image"
-import { Link } from "gatsby"
 
 export default function Layout({ children }) {
   return (
@@ -12,16 +11,15 @@ export default function Layout({ children }) {
       <footer>
         <div class="container">
           <p class="footer-text">Copyright 2021 | Daniël Codes</p>
-          <Link to="https://github.com/daniel1890">
+          <a href="https://github.com/daniel1890">
             <StaticImage
               class="git-logo"
               src="../../public/logo_git.png"
               alt="github-logo"
               href="https://github.com/daniel1890"
-              width="25"
-              height="25"
+              style={{ width: "25px", height: "25px" }}
             ></StaticImage>
-          </Link>
+          </a>
         </div>
       </footer>
     </div>
