@@ -22,6 +22,7 @@ Met behulp van Gatsby is het makkelijk om een statische website te bouwen die ee
 8. Creeër een graphql query, dit is nodig om externe data op te halen vanuit een externe endpoint, een graphql query returned altijd een JSON object. Door graphql te importeren met gatsby is de graphql library makkelijk te gebruiken.
 9. Voeg de gatsby-source-filesystem plugin toe, mbv deze plugin kan je lokale data gebruikelijk maken in de markup. Plugins moeten altijd geïnitialiseerd worden in de gatsby-config.js file, hier moet de plugin aangeroepen worden en in dit geval zijn ook een aantal opties aan verbonden.
 10. Gebruik de localhost:8000/__graphql url om de juiste queries mee te schrijven, schrijf de juiste queries om data vanuit de projects & notes folder op te vragen.
+11. Verwijder notes folder want die is niet meer nodig, voeg de gatsby-transformer-remark plugin toe, deze plugin is nodig om markdown syntax te parsen naar HTML syntax, als dit niet gebeurt zou de tekst onleesbaar zijn. In de index page van projects wordt een graphql query toegevoegd, met deze query is de data op te halen van de bestanden uit de projects folder, door de data van de query mee te passen naar ons Projects component kunnen we de data als constante gebruiken waar we ook willen in de HTML markup, door template strings te gebruiken kan binnen een string een verschillende route meegegeven worden in de link per project, hierdoor wordt de project.frontmatter.slug gebruikt om de link de juiste route te geven.
 
 ## Gebruikte Programmeertalen
 
@@ -33,3 +34,4 @@ Met behulp van Gatsby is het makkelijk om een statische website te bouwen die ee
 - Gatsby Plugin Image
 - Gatsby Plugin Sharp
 - Gatsby Source Filesystem
+- Gatsby Transformer Remark

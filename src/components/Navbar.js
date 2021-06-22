@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <nav>
       <div className="logo">
-        <Link to="../index.js">
+        <Link to="/">
           <StaticImage
             src="../../public/logo_thumbnail_white_large.png"
             alt="logo"
