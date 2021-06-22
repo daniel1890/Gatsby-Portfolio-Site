@@ -6,7 +6,24 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp"],
+  plugins: [
+    "gatsby-plugin-image",
+     "gatsby-plugin-sharp",
+     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `notes`,
+        path: `${__dirname}/src/notes/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/src/projects/`,
+      },
+    },
+    ],
   siteMetadata: {
     title: "Daniël Codes",
     description: "Web Dev Portfolio",

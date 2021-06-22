@@ -41,7 +41,10 @@ nav {
   margin: 40px auto;
 }
 nav .title {
-  padding-top: 0.2rem;
+  padding-top: 0rem;
+}
+nav .logo {
+  padding-top: 0.2em;
 }
 nav .links {
   display: inline-block;
