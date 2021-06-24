@@ -1,20 +1,25 @@
 import React from "react"
 import Layout from "../../components/Layout"
-import { portfolio } from "../../styles/projects.module.css"
 import { graphql } from 'gatsby'
 import { Link } from "gatsby"
+import { portfolio, projects } from '../../styles/projects.module.css'
 
 const index = ({ data }) => {
-  const projects = data.allMarkdownRemark.nodes
+  const projects_data = data.allMarkdownRemark.nodes
 
   return (
     <Layout>
       <div className={portfolio}>
         <h2>Portfolio</h2>
         <h3>Projecten & Websites Die Ik Gecreeërd heb</h3>
-        <div>
-          {projects.map(project => (
-            <Link to={`/projects/${project.frontmatter.slug}`} key={project.id}>{project.frontmatter.title}</Link>
+        <div className={projects}>
+          {projects_data.map(project => (
+            <Link to={`/projects/${project.frontmatter.slug}`} key={project.id}>
+              <div>
+                <h3>{ project.frontmatter.title }</h3>
+                <p>{ project.frontmatter.stack }</p>
+              </div>
+            </Link>
           ))}
         </div>
 
