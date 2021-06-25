@@ -8,7 +8,7 @@ module.exports = {
   /* Your site config here */
   plugins: [
     "gatsby-plugin-image",
-     "gatsby-plugin-sharp",
+    "gatsby-plugin-sharp",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -27,10 +27,11 @@ module.exports = {
         plugins: [],
       },
     },
-    ],
+  ],
   siteMetadata: {
     title: "Daniël Codes",
     description: "Web Dev Portfolio",
     copyright: "This website is copyright 2021 Daniël Codes",
+    contact: "me@danielcodesnl.com",
   },
 }

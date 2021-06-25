@@ -1,11 +1,13 @@
 import React from "react"
 import Layout from "../../components/Layout"
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby"
 import { Link } from "gatsby"
-import { portfolio, projects } from '../../styles/projects.module.css'
+import { portfolio, projects } from "../../styles/projects.module.css"
 
 const index = ({ data }) => {
-  const projects_data = data.allMarkdownRemark.nodes
+  const projects_data = data.projects.nodes
+  const contact_data = data.contact.siteMetadata.contact
+  //console.log(projects_data, contact_data)
 
   return (
     <Layout>
@@ -16,13 +18,13 @@ const index = ({ data }) => {
           {projects_data.map(project => (
             <Link to={`/projects/${project.frontmatter.slug}`} key={project.id}>
               <div>
-                <h3>{ project.frontmatter.title }</h3>
-                <p>{ project.frontmatter.stack }</p>
+                <h3>{project.frontmatter.title}</h3>
+                <p>{project.frontmatter.stack}</p>
               </div>
             </Link>
           ))}
         </div>
-
+        <p>Waardeer je wat je ziet? Email mij at {contact_data}</p>
       </div>
     </Layout>
   )
@@ -30,15 +32,24 @@ const index = ({ data }) => {
 
 export const query = graphql`
   {
-    allMarkdownRemark {
+    projects: allMarkdownRemark(
+      sort: { fields: frontmatter___date, order: ASC }
+    ) {
       nodes {
         id
         html
         frontmatter {
+          date
           slug
           stack
           title
         }
+      }
+    }
+
+    contact: site {
+      siteMetadata {
+        contact
       }
     }
   }
