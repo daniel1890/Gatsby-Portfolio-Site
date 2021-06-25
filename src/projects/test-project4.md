@@ -3,6 +3,8 @@ title: Test Project 4
 stack: HTML & CSS
 slug: test-project4
 date: 2021-01-04T00:00:00+00:00
+thumb: ../images/thumbs/gaming.png
+featuredImg: ../images/featured/gaming-banner.png
 ---
 
 # Lorem Ipsum 4

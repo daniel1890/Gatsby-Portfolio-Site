@@ -2,9 +2,13 @@ import { Link } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
 import { header, btn } from "../styles/home.module.css"
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { graphql } from "gatsby"
 
-export default function Home() {
+export default function Home({ data }) {
+  const banner_img = data.file.childImageSharp.gatsbyImageData
+
+  console.log(data)
   return (
     <Layout>
       <section className={header}>
@@ -18,14 +22,26 @@ export default function Home() {
             Mijn Portfolio Projecten
           </Link>
         </div>
-        <StaticImage
-          src="../../public/home-page-image.png"
+        <GatsbyImage
+          image={banner_img}
           alt="Man working on personal computer get's a 404 error"
-          style={{ maxWidth: "100%" }}
-        ></StaticImage>
+        ></GatsbyImage>
       </section>
     </Layout>
   )
 }
 
-//export default Home
+export const query = graphql`
+  {
+    file(relativePath: { eq: "home-page-image.png" }) {
+      id
+      childImageSharp {
+        gatsbyImageData(
+          layout: CONSTRAINED
+          placeholder: BLURRED
+          formats: AUTO
+        )
+      }
+    }
+  }
+`

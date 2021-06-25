@@ -3,6 +3,8 @@ title: Test Project 3
 stack: HTML & CSS
 slug: test-project3
 date: 2021-01-03T00:00:00+00:00
+thumb: ../images/thumbs/food.png
+featuredImg: ../images/featured/food-banner.png
 ---
 
 # Lorem Ipsum 3

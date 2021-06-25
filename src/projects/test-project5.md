@@ -3,6 +3,8 @@ title: Test Project 5
 stack: HTML & CSS
 slug: test-project5
 date: 2021-01-05T00:00:00+00:00
+thumb: ../images/thumbs/shoes.png
+featuredImg: ../images/featured/shoes-banner.png
 ---
 
 # Lorem Ipsum 5

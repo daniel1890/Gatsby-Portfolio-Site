@@ -3,6 +3,8 @@ title: Test Project 1
 stack: HTML & CSS
 slug: test-project1
 date: 2021-01-01T00:00:00+00:00
+thumb: ../images/thumbs/coffee.png
+featuredImg: ../images/featured/coffee-banner.png
 ---
 
 # Lorem Ipsum 1

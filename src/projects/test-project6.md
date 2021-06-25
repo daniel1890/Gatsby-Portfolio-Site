@@ -3,6 +3,8 @@ title: Test Project 6
 stack: HTML & CSS
 slug: test-project6
 date: 2021-01-06T00:00:00+00:00
+thumb: ../images/thumbs/skate.png
+featuredImg: ../images/featured/skate-banner.png
 ---
 
 # Lorem Ipsum 6

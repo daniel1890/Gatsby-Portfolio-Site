@@ -3,6 +3,8 @@ title: Test Project 2
 stack: HTML & CSS
 slug: test-project2
 date: 2021-01-02T00:00:00+00:00
+thumb: ../images/thumbs/drums.png
+featuredImg: ../images/featured/drums-banner.png
 ---
 
 # Lorem Ipsum 2
