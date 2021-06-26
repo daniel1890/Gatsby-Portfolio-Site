@@ -17,7 +17,7 @@ const index = ({ data }) => {
         <h3>Projecten & Websites Die Ik Gecreeërd heb</h3>
         <div className={projects}>
           {projects_data.map(project => (
-            <Link to={`/projects/${project.frontmatter.slug}`} key={project.id}>
+            <Link to={"/projects/" + project.frontmatter.slug} key={project.id}>
               <div>
                 <GatsbyImage
                   alt="project thumbnail"

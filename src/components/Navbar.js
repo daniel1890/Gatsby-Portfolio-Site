@@ -27,7 +27,7 @@ export default function Navbar() {
           />
         </Link>
       </div>
-      <h1 className="title">{ title }</h1>
+      <h1 className="title">{title}</h1>
       <div className="links">
         <Link to="../">Index</Link>
         <Link to="../about">About Me</Link>
